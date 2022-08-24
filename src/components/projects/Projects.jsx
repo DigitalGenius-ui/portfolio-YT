@@ -50,6 +50,9 @@ const Content = styled.div`
         margin: 0 auto;
         padding: 1rem 0;
         font-size: 0.9rem;
+        @media(max-width : 483px){
+          width: 90%;
+        }
     }
 `
 
