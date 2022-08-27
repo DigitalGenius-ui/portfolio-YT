@@ -18,9 +18,9 @@ const ProfileComp = () => {
             <Social>
                 <p>Check out my</p>
                 <div className="social-icons">
-                    <span><a href=""><AiOutlineInstagram/></a></span>
-                    <span><a href=""><GiEarthAmerica/></a></span>
-                    <span><a href=""><FaLinkedinIn/></a></span>
+                    <span><a href="#instagram"><AiOutlineInstagram/></a></span>
+                    <span><a href="#website"><GiEarthAmerica/></a></span>
+                    <span><a href="3linkedIn"><FaLinkedinIn/></a></span>
                 </div>
             </Social>
         </Texts>
