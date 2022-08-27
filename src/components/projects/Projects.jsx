@@ -1,13 +1,18 @@
 import React from 'react'
 import styled from 'styled-components';
 import Slider from './Slider';
+import Pulse from "react-reveal/Pulse"
 
 const ProjectsSlide = () => {
   return (
-    <Content>
-        <h1>Recent <span className="green">Projects</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Nam eos impedit voluptate aliquam ab reprehenderit alias quis pariatur facere. Eaque.</p>
+    <Content id='project'>
+        <Pulse>
+          <h1>Recent <span className="green">Projects</span></h1>
+        </Pulse>
+        <Pulse>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Nam eos impedit voluptate aliquam ab reprehenderit alias quis pariatur facere. Eaque.</p>
+        </Pulse>
         <Slide>
           <Slider/>
         </Slide>

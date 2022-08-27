@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 import ProfileComp from './Profile';
+import Fade from 'react-reveal/Fade';
 
 const BannerComp = () => {
   return (
     <Container>
+      <Fade top>
         <Header/>
+      </Fade>
         <ProfileComp/>
     </Container>
   )

@@ -4,28 +4,40 @@ import { MdDesignServices } from 'react-icons/md';
 import { FiCodesandbox } from 'react-icons/fi';
 import { CgWebsite } from 'react-icons/cg';
 import Card from './Card';
+import Flip from 'react-reveal/Flip';
+import { Fade, Zoom } from 'react-reveal';
 
 const Service = () => {
   return (
-    <Content>
-        <h4>My <span className="green">services</span></h4>
-        <h1>What I Do</h1>
+    <Content id='service'>
+        <Flip top>
+            <h4>My <span className="green">services</span></h4>
+        </Flip>
+        <Fade left>
+            <h1>What I Do</h1>
+        </Fade>
         <Cards>
-            <Card
-            Icon = {MdDesignServices}
-            title = {"Ui/Ux Designer"}
-            desc = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!"}
-            />
-            <Card
-            Icon = {FiCodesandbox}
-            title = {"Graphic Designer"}
-            desc = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!"}
-            />
-            <Card
-            Icon = {CgWebsite}
-            title = {"Web Designer"}
-            desc = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!"}
-            />
+            <Fade left>
+                <Card
+                Icon = {MdDesignServices}
+                title = {"Ui/Ux Designer"}
+                desc = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!"}
+                />
+            </Fade>
+            <Fade bottom>
+                <Card
+                Icon = {FiCodesandbox}
+                title = {"Graphic Designer"}
+                desc = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!"}
+                />
+            </Fade>
+            <Fade left>
+                <Card
+                Icon = {CgWebsite}
+                title = {"Web Designer"}
+                desc = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!"}
+                />
+            </Fade>
         </Cards>
     </Content>
   )

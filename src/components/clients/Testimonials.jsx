@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Client from './Client';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useRef } from 'react';
+import Flip from 'react-reveal/Flip';
 
 let clients = [
     {
@@ -82,9 +83,13 @@ const Testimonials = () => {
       <Client item={item} key={item.stars}/>
   ))
   return (
-    <Container>
-        <span className="green">TESTIMONIALS</span>
-        <h1>What Clients Say</h1>
+    <Container id='testimonial'>
+        <Flip top>
+          <span className="green">TESTIMONIALS</span>
+        </Flip>
+        <Flip bottom>
+          <h1>What Clients Say</h1>
+        </Flip>
         <Clients>
             <Slider ref={buttonRef} {...settings}>
                 {clientsDisc}

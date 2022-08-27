@@ -6,7 +6,7 @@ const Header = () => {
     const [bar, setBar] = useState(false);
   return (
     <Content bar={bar}>
-        <Logo>
+        <Logo id='home'>
             <span><GiCandleFlame/></span>
             <h1>Portfolio</h1>
         </Logo>
@@ -62,6 +62,26 @@ const Nav = styled.div`
         text-decoration: none;
         color: #fff;
         font-weight: 400;
+        position: relative;
+        :before{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            height: 2px;
+            transform: scale(0);
+            transform-origin: right;
+            transition: transform 400ms ease-in-out;
+        }
+        :hover{
+            opacity: 0.6;
+        }
+        :hover:before{
+            transform: scale(1);
+            transform-origin: left;
+        }
     }
     @media(max-width:650px){
         background-color: #01be96;

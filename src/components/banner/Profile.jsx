@@ -3,32 +3,37 @@ import styled from 'styled-components';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {GiEarthAmerica} from 'react-icons/gi';
 import {FaLinkedinIn} from 'react-icons/fa';
+import Fade from 'react-reveal/Fade';
 
 const ProfileComp = () => {
   return (
     <Content>
-        <Texts>
-            <h4>Hello <span className='green'>I'm</span></h4>
-            <h1>Milad Amiri</h1>
-            <h3>UX/UI Designer and graphic designer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Rerum nulla explicabo voluptatum eum fugiat est eligendi 
-            aut fuga vel iste?</p>
-            <button>Let's Talk</button>
-            <Social>
-                <p>Check out my</p>
-                <div className="social-icons">
-                    <span><a href="#instagram"><AiOutlineInstagram/></a></span>
-                    <span><a href="#website"><GiEarthAmerica/></a></span>
-                    <span><a href="3linkedIn"><FaLinkedinIn/></a></span>
-                </div>
-            </Social>
-        </Texts>
-        <Profile>
-            <img 
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png" 
-            alt="" />
-        </Profile>
+        <Fade left>
+            <Texts>
+                <h4>Hello <span className='green'>I'm</span></h4>
+                <h1>Milad Amiri</h1>
+                <h3>UX/UI Designer and graphic designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rerum nulla explicabo voluptatum eum fugiat est eligendi 
+                aut fuga vel iste?</p>
+                <button>Let's Talk</button>
+                <Social>
+                    <p>Check out my</p>
+                    <div className="social-icons">
+                        <span><a href="#instagram"><AiOutlineInstagram/></a></span>
+                        <span><a href="#website"><GiEarthAmerica/></a></span>
+                        <span><a href="3linkedIn"><FaLinkedinIn/></a></span>
+                    </div>
+                </Social>
+            </Texts>
+        </Fade>
+        <Fade right>
+            <Profile>
+                <img 
+                src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png" 
+                alt="" />
+            </Profile>
+        </Fade>
     </Content>
   )
 }
@@ -89,6 +94,7 @@ const Profile = styled.div`
         filter: contrast(100%);
         filter: drop-shadow(0px 10px 10px #01be9570);
         width: 25rem;
+        transition: transform 400ms ease-in-out;
         @media(max-width:810px){
             width: 20rem;
         }
@@ -98,6 +104,9 @@ const Profile = styled.div`
         @media(max-width:650px){
             width: 100%;
         }
+    }
+    :hover img{
+        transform: translateY(-10px);
     }
 `
 
@@ -122,6 +131,10 @@ const Social = styled.div`
             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             position: relative;
             background-color: #01be96;
+            transition: transform 400ms ease-in-out;
+            :hover{
+                transform: rotate(360deg);
+            }
             a{
                 color: #fff;
                 position: absolute;

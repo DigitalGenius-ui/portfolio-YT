@@ -7,6 +7,7 @@ import {AiFillGithub, AiFillLinkedin, AiOutlineArrowUp} from "react-icons/ai";
 import {BsFacebook, BsSlack} from "react-icons/bs";
 import {FiMail, FiPhoneCall} from "react-icons/fi";
 import { useForm, ValidationError } from '@formspree/react';
+import { Bounce, LightSpeed, Zoom } from 'react-reveal';
 
 const Footer = () => {
     const [state, handleSubmit] = useForm("xeqdorro");
@@ -21,14 +22,17 @@ const Footer = () => {
         })
     }
   return (
-    <Container>
+    <Container id='portfolio'>
         <Wrapper>
             <Profile>
-                <h1>Portfolio</h1>
+                <Bounce left><h1>Portfolio</h1></Bounce>
+                <LightSpeed>
                 <div className="address">
                     <h1>Address:</h1>
                     <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
                 </div>
+                </LightSpeed>
+                <LightSpeed>
                 <div className="links">
                     <h1>Contact me Directly:</h1>
                     <div >
@@ -40,6 +44,8 @@ const Footer = () => {
                         <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
                     </div>
                 </div>
+                </LightSpeed>
+                    <LightSpeed>
                     <div className="profile">
                         <h1>Check my Profiles:</h1>
                         <div className="icons">
@@ -49,12 +55,14 @@ const Footer = () => {
                             <span><a href="#linkedIn"><AiFillLinkedin/></a></span>
                         </div>
                     </div>
+                    </LightSpeed>
                     <ArrowUp
                     onClick={scrollHandler}
                     ><AiOutlineArrowUp/></ArrowUp>
             </Profile>
             <Form>
-                <h1>Contact <span className="green">Me</span></h1>
+                <Bounce ><h1>Contact <span className="green">Me</span></h1></Bounce>
+                <Zoom>
                 <form onSubmit={handleSubmit}>
                     <div className="name">
                         <div><CgProfile/></div>
@@ -91,6 +99,7 @@ const Footer = () => {
                     />
                     <button type='submit'>Submit</button>
                 </form>
+                </Zoom>
             </Form>
         </Wrapper>
     </Container>
