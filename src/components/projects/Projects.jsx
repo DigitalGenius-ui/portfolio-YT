@@ -1,42 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from './Slider';
 
-const Projects = () => {
+const ProjectsSlide = () => {
   return (
     <Content>
         <h1>Recent <span className="green">Projects</span></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Nam eos impedit voluptate aliquam ab reprehenderit alias quis pariatur facere. Eaque.</p>
         <Slide>
-        <Swiper
-        slidesPerView={2}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          type: "fraction",
-        }}
-        navigation={true}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://res.cloudinary.com/ghazni/image/upload/v1659091340/Yt-portfolio/png-clipart-responsive-web-design-wordpress-website-wireframe-mobile-phones-mockup-wordpress-template-electronics_fhzndr.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://res.cloudinary.com/ghazni/image/upload/v1659091340/Yt-portfolio/png-clipart-responsive-web-design-wordpress-website-wireframe-mobile-phones-mockup-wordpress-template-electronics_fhzndr.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://res.cloudinary.com/ghazni/image/upload/v1659091340/Yt-portfolio/png-clipart-responsive-web-design-wordpress-website-wireframe-mobile-phones-mockup-wordpress-template-electronics_fhzndr.png" alt="" />
-        </SwiperSlide>
-      </Swiper>
+          <Slider/>
         </Slide>
     </Content>
   )
 }
 
-export default Projects;
+export default ProjectsSlide;
 
 const Content = styled.div`
     padding: 3rem 0;
@@ -56,4 +35,8 @@ const Content = styled.div`
     }
 `
 
-const Slide = styled.div``
+const Slide = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+`

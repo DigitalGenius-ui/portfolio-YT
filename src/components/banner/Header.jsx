@@ -11,11 +11,11 @@ const Header = () => {
             <h1>Portfolio</h1>
         </Logo>
             <Nav bar={bar}>
-                <a href="#">Home</a>
-                <a href="#">Service</a>
-                <a href="#">Projects</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Portfolio</a>
+                <a href="#home">Home</a>
+                <a href="#service">Service</a>
+                <a href="#project">Projects</a>
+                <a href="#testimonial">Testimonials</a>
+                <a href="#portfolio">Portfolio</a>
             </Nav>
                 <div className="shadow"></div>
         <Bar bar={bar} onClick={() => setBar(!bar)}>

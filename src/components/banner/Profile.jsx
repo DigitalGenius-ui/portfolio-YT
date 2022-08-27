@@ -38,8 +38,11 @@ export default ProfileComp;
 const Content = styled.div`
     display: flex;
     gap: 2rem;
-    padding: 2rem 0;
+    padding-top: 3rem;
     z-index: 99999;
+    @media(max-width:1100px){
+        padding: 1.5rem 0;
+    }
     @media(max-width:650px){
         flex-direction: column;
     }

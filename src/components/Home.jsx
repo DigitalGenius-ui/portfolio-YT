@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import BannerComp from './banner/Banner';
-import Projects from './projects/Projects';
+import Testimonials from './clients/Testimonials';
+import Footer from './Footer/Footer';
+import ProjectsSlide from './projects/Projects';
 import Service from './service/Service';
 
 const Home = () => {
@@ -11,7 +13,9 @@ const Home = () => {
         <BannerComp/>
       </Banner>
       <Service/>
-      <Projects/>
+      <ProjectsSlide />
+      <Testimonials/>
+      <Footer/>
     </Container>
   )
 }
