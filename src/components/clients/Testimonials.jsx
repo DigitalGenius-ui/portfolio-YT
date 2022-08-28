@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Client from './Client';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useRef } from 'react';
-import Flip from 'react-reveal/Flip';
+import {Flip} from 'react-awesome-reveal';
 
 let clients = [
     {

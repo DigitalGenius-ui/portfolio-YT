@@ -4,8 +4,7 @@ import { MdDesignServices } from 'react-icons/md';
 import { FiCodesandbox } from 'react-icons/fi';
 import { CgWebsite } from 'react-icons/cg';
 import Card from './Card';
-import Flip from 'react-reveal/Flip';
-import { Fade } from 'react-reveal';
+import { Fade,Flip } from 'react-awesome-reveal';
 
 const Service = () => {
   return (

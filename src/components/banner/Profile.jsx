@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import {GiEarthAmerica} from 'react-icons/gi';
 import {FaLinkedinIn} from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 
 const ProfileComp = () => {
   return (

@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components';
 import Slider from './Slider';
-import Pulse from "react-reveal/Pulse"
+import { Fade } from "react-awesome-reveal"
 
 const ProjectsSlide = () => {
   return (
     <Content id='project'>
-        <Pulse>
+        <Fade>
           <h1>Recent <span className="green">Projects</span></h1>
-        </Pulse>
-        <Pulse>
+        </Fade>
+        <Fade>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Nam eos impedit voluptate aliquam ab reprehenderit alias quis pariatur facere. Eaque.</p>
-        </Pulse>
+        </Fade>
         <Slide>
           <Slider/>
         </Slide>

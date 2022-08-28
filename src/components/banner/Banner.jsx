@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 import ProfileComp from './Profile';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 const BannerComp = () => {
   return (
