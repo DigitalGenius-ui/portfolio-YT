@@ -5,7 +5,7 @@ import { FiCodesandbox } from 'react-icons/fi';
 import { CgWebsite } from 'react-icons/cg';
 import Card from './Card';
 import Flip from 'react-reveal/Flip';
-import { Fade, Zoom } from 'react-reveal';
+import { Fade } from 'react-reveal';
 
 const Service = () => {
   return (
