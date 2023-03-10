@@ -94,6 +94,7 @@ const Nav = styled.div`
         left: 5%;
         right: 5%;
         transition: all 400ms ease-in-out;
+        z-index : 10000;
     }
     z-index: 10000;
 `
